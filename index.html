@@ -7,12 +7,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Text to Image</h1>
-        <label for="input">Create an image from your text prompt:</label>
-        <input type="text" id="input" placeholder="Enter text here...">
-        <button id="btn">Generate</button>
-        <img id="image" src="" alt="">
+<div class="container">
+    <h1>PICTURA</h1>
+    <h2 id="101">Your Words, Our Canvas!</h2>
+    <label for="input">Bring your thoughts to life! Type a sentence for your AI image:</label>
+    <input type="text" id="input" placeholder="Enter text here..." aria-label="Input text for image generation">
+    <button id="btn" aria-label="Generate image from input text">Generate</button>
+    <div class="loader" style="display:none;"></div>
+    <img id="image" src="" alt="Generated image will appear here" style="display:none;">
+</div>
+
     </div>
     <script src="script.js"></script>
 </body>
